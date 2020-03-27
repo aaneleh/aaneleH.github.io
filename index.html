@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Procure!</title>
+		<style> 
+			body {
+				background-color: rgb(232, 244, 246);
+			}
+			.item {
+				position: absolute;	
+			}
+			#list {
+				margin-top
+				padding:6px;
+				width:800px;
+				background-color: rgb(203, 235, 241);
+				
+			}
+			#list li {
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	
+	<body> 
+		
+		<h1>Procure!</h1>
+
+		<img src="C:\Users\Helena\Desktop\Codigos\Procurar/cenario.png"> </img>
+		
+		<img class ="item" onClick = "achou('Chamine')" width="100px" style ="left: 732px;" src="C:\Users\Helena\Desktop\Codigos\Procurar\Chamine.png"> </img>
+		<img class ="item" onClick = "achou('Folha')"   width="100px" style ="left: 252px; top: 284px;" src = "C:\Users\Helena\Desktop\Codigos\Procurar\Folha.png"> </img>
+		<img class ="item" onClick = "achou('Fruta')"   width="80px" style ="left: 155px; top: 188px;" src = "C:\Users\Helena\Desktop\Codigos\Procurar\Fruta.png"> </img>
+		<img class ="item" onClick = "achou('Pinheiro')" width="40px" style ="left: 468px; top: 152px;" src = "C:\Users\Helena\Desktop\Codigos\Procurar\Pinheiro.png"> </img>
+		<img class ="item" onClick = "achou('Sol')" width="100px" style ="left: -15px; top: 146px;" src = "C:\Users\Helena\Desktop\Codigos\Procurar\Sol.png"> </img>
+		<img class ="item" onClick = "achou('Tulipa')" width="120px" style ="left: 596px; top: 218px;" src = "C:\Users\Helena\Desktop\Codigos\Procurar\Tulipa.png"> </img>
+		
+		<div id= list>
+			<ul> 
+				<li id = 'Chamine'> Chamine</li>
+				<li id = 'Folha'> Folha </li>
+				<li id = 'Fruta'> Fruta </li>
+				<li id = 'Pinheiro'> Pinheiro </li>
+				<li id = 'Sol'> Sol </li>
+				<li id = 'Tulipa'> Tulipa </li> 
+			</ul>
+		<div>
+	</body>
+	
+	<script>
+
+		function achou(Nome) {		
+			alert(Nome);
+			
+			var Encontrado = document.getElementById(Nome);
+			
+			Encontrado.style.textDecoration = "line-through";
+		}
+		
+	</script>
+</html>	
